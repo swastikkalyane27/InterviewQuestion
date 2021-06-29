@@ -1,0 +1,144 @@
+
+1) What do you mean by *args and **kwargs:
+
+
+          - The *args and **kwargs are conventions to represent two variables, which are mostly used in defining functions in Python.
+          - Both these variables are used to pass a varying number of parameters to any method.
+
+  or
+          - The special syntax, *args and **kwargs in function definitions is used to pass a variable number of arguments to a function. 
+          - The single asterisk form (*args) is used to pass a non-keyworded, variable-length argument list to functions, 
+            and the double asterisk (**kwargs) form is used to pass a keyworded, variable-length argument list to functions.
+
+
+          - **kwargs creates dictionary whereas *args creates tuple.
+
+
+
+
+
+
+
+
+
+
+
+
+ 2) what is the Iterator Protocol:
+
+          
+                - The iterator protocol defines a standard way to produce a sequence of values (either finite or infinite), 
+                  and potentially a return value when all values have been generated.
+
+                - An object is an iterator when it implements a next() method
+
+
+
+          Iterables:
+
+               - everything we can loop over is called as iterables.
+          
+               - In python programming, an iterable is anything that can be looped through or can be iterated over. 
+                 For example, list, tuples, dictionaries, etc. all are iterables.
+
+
+
+          Iterator:
+
+               - iterator is an object that contains a sequence or countable variables.
+
+               - iterator is object it has only one work that is to give the next element present in itreables
+
+               - It has a __next__() method that returns the next value in the iteration and updates the state to point at the next value.
+                 and should raise the StopIteration exception upon reaching the end.
+
+
+
+
+
+
+
+
+
+
+ 3) What is tuple unpacking.
+
+   
+   Tuple Packing and Unpacking:
+
+              - We can create a tuple by packing a group of variables.
+
+                Eg:
+                      a=10
+                      b=20
+                      c=30
+                      d=40
+                      t=a,b,c,d
+                      print(t) #(10, 20, 30, 40)
+
+               Here a,b,c,d are packed into a tuple t. This is nothing but tuple packing.
+
+
+
+
+             - Tuple unpacking is the reverse process of tuple packing
+               We can unpack a tuple and assign its values to different variables
+
+
+
+               Eg:
+                    t=(10,20,30,40)
+                    a,b,c,d=t
+                    print("a=",a,"b=",b,"c=",c,"d=",d)
+
+ 
+                   Output:
+                   a= 10 b= 20 c= 30 d= 40
+
+
+
+
+   Note:  At the time of tuple unpacking the number of variables and number of values
+          should be same. ,otherwise we will get ValueError.
+
+   Eg:
+          t=(10,20,30,40)
+          a,b,c=t #ValueError: too many values to unpack (expected 3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 4) What is Garbage collection:
+
+
+         - Garbage collection is a process of freeing up memory that is not in use by a specific program at a given instance of time.
+         - This process is helpful in memory management and minimizes the wastage of memory. 
+         - The memory freed by garbage collection can be used for storing other important data or variables for the same program or by other programs.
+
+         - Garbage collection in Python works automatically. When no reference is left to a variable/data/value or object then the memory occupied by 
+           that object is freed up by garbage collection mechanism of python.
+
+
+
+
+
+
+
+
+
+
+
