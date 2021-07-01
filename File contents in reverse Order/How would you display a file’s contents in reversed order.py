@@ -1,8 +1,8 @@
 # example 1:
 
-f1 = open('sample1.txt','w')
+f1 = open('sample1.txt', 'w')
 
-with open('sample.txt','r') as data :
+with open('sample.txt', 'r') as data :
     data1 = data.read()
 
 data2 = data1[::-1]
@@ -12,9 +12,9 @@ f1.close()
 
 # example 2 :
 
-f2 = open('sample2.txt','w')
+f2 = open('sample2.txt', 'w')
 
-with open ('sample.txt','r') as myfile :
+with open ('sample.txt', 'r') as myfile :
     data3= []
     data3.append(myfile.readline())
     data3.append(myfile.readline())

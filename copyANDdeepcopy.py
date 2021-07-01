@@ -35,10 +35,10 @@ print(id(l5[2])==id(l3[2]))        # (False) in case of deepcopy
 
 l4[2].append(1)
 l4[2].insert(1,110)
-
+del l4[1]
 l5[2].append(12)
 l5[2].insert(1,15)
-
+del l5[3]
 print(l3)
 print(l4)
 print(l5)
